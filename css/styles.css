@@ -743,6 +743,7 @@ figcaption {
 
 .label__modal {
   display: block;
+  position: relative;
   font-family: Roboto;
   font-weight: 400;
   line-height: 1.17;
@@ -759,6 +760,7 @@ figcaption {
   padding: 0px;
   margin-top: 4px;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
 .textarea__modal {
   width: 448px;
@@ -770,4 +772,27 @@ figcaption {
 }
 .textarea__modal > placeholder {
   color: #75757580;
+}
+.modal__icon {
+  fill: var(--brand-color-second);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+/* svg {fill: black}; */
+.policy-text__modal::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000000;
+  /* transition: ; */
+}
+.policy__modal:checked + .policy-text__modal::before {
+  background-color: var(--brand-color-second);
+  border: none;
+  /* background-image: url(../images/); */
 }
