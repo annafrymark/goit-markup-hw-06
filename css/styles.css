@@ -692,7 +692,8 @@ label[for="sign-up"] {
   margin-bottom: 94px;
   padding: 10px 24px 10px 42px;
   display: inline-flex;
-  justify-content: space-around;
+  position: relative;
+  /* justify-content: space-around; */
 }
 .footer__sign-up input {
   background-color: var(--brand-color-first);
@@ -711,7 +712,10 @@ label[for="sign-up"] {
 .icon-send {
   fill: var(--brand-color-third);
   margin-left: 24px;
-  margin-right: 28px;
+  /* margin-right: 28px; */
+  position: absolute;
+  right: 28px;
+  top: 10px;
 }
 
 /* BACKDROP */
@@ -866,6 +870,8 @@ label[for="sign-up"] {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-left: 7px;
+  text-align: center;
 }
 .policy-text__modal > a {
   color: var(--brand-color-second);
@@ -873,14 +879,13 @@ label[for="sign-up"] {
 }
 
 /* svg {fill: black}; */
-.policy-text__modal::before {
+/* .policy-text__modal::before {
   display: block;
   content: "";
   width: 16px;
   height: 16px;
   border: 1px solid #000000;
-  /* transition: ; */
-}
+} */
 .policy__modal:checked + .policy-text__modal::before {
   background-color: var(--brand-color-second);
   border: none;
