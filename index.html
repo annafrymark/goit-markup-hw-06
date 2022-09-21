@@ -627,7 +627,7 @@
             id="sign-up"
             name="sign-up"
           />
-          <button type="submit" class="btn-sign-up section-main__button">
+          <button type="submit" class="section-main__button btn-sign-up">
             Zapisz się
             <svg class="icon-send" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
@@ -693,17 +693,18 @@
               ></textarea>
             </label>
 
-            <label for="user-policy" class="policy-text__modal"
-              ><svg class="modal__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
+            <label for="user-policy" class="policy-text__modal">
               <input
                 class="policy__modal"
                 type="checkbox"
                 value="accept"
                 id="user-policy"
-              />Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-              <a href="#">Politykę Prywatności</a>
+              /><svg class="accept__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-Vector-1"></use></svg
+              ><span class="policy-text__modal--statement"
+                >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności</a></span
+              >
             </label>
 
             <button class="btn__modal section-main__button" type="submit">
